@@ -3,10 +3,14 @@ project(cpp)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(cpp
-        #        main.cpp
-#                指针.cpp
-        #        全局区.cpp
-        # 栈区.cpp
-#        堆区.cpp
-        map.cpp)
+add_executable(
+        cpp
+        Person.cpp
+        Person.h
+        #main.cpp
+        #指针.cpp
+        #全局区.cpp
+        #栈区.cpp
+        堆区.cpp
+        #map.cpp
+        Dog.cpp Dog.h)
