@@ -12,8 +12,8 @@ add_executable(
         #main.cpp
         #指针.cpp
         #全局区.cpp
-        #栈区.cpp
-#        堆区.cpp
+        栈区.cpp
+        #堆区.cpp
         #map.cpp
-        引用.cpp
+        #引用.cpp
 )

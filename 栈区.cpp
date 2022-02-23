@@ -1,4 +1,5 @@
 #include "iostream"
+#include "Person.h"
 
 using namespace std;
 
@@ -12,11 +13,26 @@ int *func(int b) {
     return &a;
 }
 
+Person func() {
+    Person person;
+    person._name = "abc";
+    return person;
+}
+
 int main() {
 
     int *p = func(10);
     cout << *p << endl;//第一次可以正常打印数字是因为编译器做了保留
     cout << *p << endl;//第二次打印就是错误的
 
+    Person p0;
+    p0._name = "局部P";
+    Person p1 = func();
+    Person p2 = p1;
+    Person *p3 = new Person();
+    p3->_name = "堆区人";
+    cout << "p1=" << p1._name << " 地址为：" << &p1 << endl;
+    cout << "p2=" << p2._name << " 地址为：" << &p2 << endl;
+    cout << "p3=" << p3->_name << " 地址为：" << p3 << endl;
     return 0;
 }
