@@ -7,10 +7,13 @@ add_executable(
         cpp
         Person.cpp
         Person.h
+        Dog.cpp
+        Dog.h
         #main.cpp
         #指针.cpp
         #全局区.cpp
         #栈区.cpp
-        堆区.cpp
+#        堆区.cpp
         #map.cpp
-        Dog.cpp Dog.h)
+        引用.cpp
+)
