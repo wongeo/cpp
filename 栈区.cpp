@@ -15,7 +15,8 @@ int *func(int b) {
 
 Person func() {
     Person person;
-    person._name = "abc";
+    person._name = "栈区的Person";
+    cout << "person=" << person._name << " 地址为：" << &person << endl;
     return person;
 }
 
