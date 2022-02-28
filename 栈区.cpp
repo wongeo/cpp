@@ -15,7 +15,7 @@ int *func(int b) {
 
 Person func() {
     Person person;
-    person._name = "栈区的Person";
+    person._name = "栈区的P";
     cout << "person=" << person._name << " 地址为：" << &person << endl;
     return person;
 }
@@ -30,8 +30,9 @@ int main() {
     p0._name = "局部P";
     Person p1 = func();
     Person p2 = p1;
+    p2._name = "aaaa";
     Person *p3 = new Person();
-    p3->_name = "堆区人";
+    p3->_name = "堆区的P";
     cout << "p1=" << p1._name << " 地址为：" << &p1 << endl;
     cout << "p2=" << p2._name << " 地址为：" << &p2 << endl;
     cout << "p3=" << p3->_name << " 地址为：" << p3 << endl;
