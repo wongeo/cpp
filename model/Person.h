@@ -11,7 +11,7 @@
 
 using namespace std;
 
-class Person {
+class Person : public Animal{
 public:
     int _age;
     string _name;

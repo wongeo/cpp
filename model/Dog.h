@@ -6,13 +6,18 @@
 #define CPP_DOG_H
 
 #include "string"
+#include "Animal.h"
 
 using namespace std;
 
-class Dog {
+class Dog : public Animal {
 public:
     int _age;
     string _name;
+public:
+    void say();
+
+    void run();
 };
 
 

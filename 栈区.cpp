@@ -1,5 +1,5 @@
 #include "iostream"
-#include "Person.h"
+#include "model/Person.h"
 
 using namespace std;
 
