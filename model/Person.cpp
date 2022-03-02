@@ -11,3 +11,7 @@ void Person::run() {
 void Person::say() {
     cout << "说话" << endl;
 }
+
+Person::Person(string name) {
+    _name = name;
+}

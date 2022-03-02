@@ -11,12 +11,14 @@
 
 using namespace std;
 
-class Person : public Animal{
+class Person : public Animal {
 public:
     int _age;
     string _name;
     Dog *_dog;
-public:
+
+    Person(string name);
+
     void run();
 
     void say();

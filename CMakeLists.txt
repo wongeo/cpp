@@ -16,4 +16,7 @@ add_executable(
         #map.cpp
         #引用.cpp
         #多态.cpp
-        模板.cpp)
+        #模板.cpp
+        #容器.cpp
+        字符.cpp
+)
