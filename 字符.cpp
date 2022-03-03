@@ -8,7 +8,7 @@ using namespace std;
 
 int main() {
     char *p = "b";
-    
+
     cout << p << endl;
     return 0;
 }
